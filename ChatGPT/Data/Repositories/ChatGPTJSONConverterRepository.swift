@@ -7,9 +7,9 @@
 
 import Foundation
 
-final class ChatGPTJSONConverterRepository: BaseChatGPTRepository, JSONConverterRepository {
-    func analyze(code: String) async throws -> [Suggestion] {
-        guard let apiKey = super.fetchApiKey() else {
+final class ChatGPTJSONConverterRepository: BaseChatGPTRepository {
+    override func askChatGPTFor(_ apiKey: String?, source code: String, language: String) async throws -> Suggestion {
+        guard let apiKey = apiKey else {
             throw ConverterError.authorization
         }
         
@@ -18,7 +18,7 @@ final class ChatGPTJSONConverterRepository: BaseChatGPTRepository, JSONConverter
         var suggestions: [Suggestion]?
         
         do {
-            let chatpGPTResponse = try await openAI.analyze(source: code)
+            let chatpGPTResponse = try await openAI.analyze(source: code, language: language)
             
             suggestions = chatpGPTResponse.choices.map { choice in
                 let suggestion = Suggestion(result: choice.message.content)
@@ -35,10 +35,11 @@ final class ChatGPTJSONConverterRepository: BaseChatGPTRepository, JSONConverter
             throw ConverterError.unknownResponse
         }
         
-        guard let suggestions else {
+        guard let suggestions = suggestions,
+              let suggestion = suggestions.first else {
             throw ConverterError.emptyResults
         }
         
-        return suggestions
+        return suggestion
     }
 }

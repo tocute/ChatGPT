@@ -6,10 +6,10 @@
   
 */
 
-"PROMPT_JSON" = "Convert this JSON to a Swift Codable data structure only struct declaration";
-"PROMPT_CODE_SMELLS" = "Check for Code Smells in this Swift code";
-"PROMPT_EXPLAIN_CODE" = "What this Swift code does?";
-"PROMPT_GENERATE_UNIT_TEST" = "Write the test cases in Swift for this code using the XCTest framework.";
+"PROMPT_JSON" = "Convert this JSON to a %@ data structure only struct declaration";
+"PROMPT_CODE_SMELLS" = "Check for Code Smells in this %@ code";
+"PROMPT_EXPLAIN_CODE" = "What this %@ code does?";
+"PROMPT_GENERATE_UNIT_TEST" = "Write the test cases in %@ for this code using the XCTest framework.";
 "PROMPT_REGEX" = "Generate a regular expression using Regex to match";
-"PROMPT_COMMENT" = "Generate comments in Swift format for this function, indicating the parameters and return type, with a max line lenght of 80 characters";
+"PROMPT_COMMENT" = "Generate comments in %@ format for this function, indicating the parameters and return type, with a max line lenght of 80 characters";
 

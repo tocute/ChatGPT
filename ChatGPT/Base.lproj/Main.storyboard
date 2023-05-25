@@ -833,15 +833,14 @@
                                             <menuItem title="Javascript" id="jVq-Bg-UWg"/>
                                             <menuItem title="Python" id="zof-AC-PQr"/>
                                             <menuItem title="Go" id="6CZ-ma-7sv"/>
-                                            <menuItem title="Others" id="tKn-pm-v7h"/>
                                         </items>
                                     </menu>
                                 </popUpButtonCell>
                             </popUpButton>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djj-Ax-zdv" userLabel="Key">
-                                <rect key="frame" x="121" y="558" width="459" height="21"/>
+                                <rect key="frame" x="121" y="558" width="465" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="NAH-H1-wGK">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="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" drawsBackground="YES" id="NAH-H1-wGK">
                                     <font key="font" metaFont="system" size="16"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -857,14 +856,18 @@
                                         <items>
                                             <menuItem title="Convert JSON Struct" state="on" id="OHf-Jo-n5Y" userLabel="Convert JSON Struct"/>
                                             <menuItem title="Code Smells" id="YP1-BA-eJi"/>
-                                            <menuItem title="Explain Code" id="m4i-tW-oaX"/>
+                                            <menuItem title="Explain Codes" keyEquivalent="z" id="m4i-tW-oaX"/>
                                             <menuItem title="Test Cases" id="IaW-fl-9ob"/>
-                                            <menuItem title="Generate comments" id="biO-9Q-Oua"/>
-                                            <menuItem title="Generate comments" id="5cq-yA-mox" userLabel="Others"/>
+                                            <menuItem title="Generate Comments" id="biO-9Q-Oua"/>
+                                            <menuItem title="Others" id="5cq-yA-mox" userLabel="Others"/>
                                         </items>
                                     </menu>
                                 </popUpButtonCell>
                             </popUpButton>
+                            <progressIndicator fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="5AV-Sd-yBh">
+                                <rect key="frame" x="284" y="229" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressIndicator>
                         </subviews>
                     </view>
                     <connections>
@@ -872,6 +875,7 @@
                         <outlet property="answerTextField" destination="yD9-8s-Kou" id="jR2-tI-y5c"/>
                         <outlet property="codeTextField" destination="qIN-je-bWh" id="xyL-Kl-ATZ"/>
                         <outlet property="languageOption" destination="ghj-lg-k1u" id="4hQ-se-maD"/>
+                        <outlet property="loadingView" destination="5AV-Sd-yBh" id="UwU-QV-0Zs"/>
                         <outlet property="questionOption" destination="r6O-98-mFD" id="hRP-Nu-jM9"/>
                     </connections>
                 </viewController>

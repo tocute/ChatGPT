@@ -25,7 +25,6 @@
 		E9D534F02A1E4D1100ED95EF /* ChatGPTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534DE2A1E4D1100ED95EF /* ChatGPTError.swift */; };
 		E9D534F12A1E4D1100ED95EF /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534DF2A1E4D1100ED95EF /* NetworkRequest.swift */; };
 		E9D534F22A1E4D1100ED95EF /* ChatGPTUnitTestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534E12A1E4D1100ED95EF /* ChatGPTUnitTestRepository.swift */; };
-		E9D534F32A1E4D1100ED95EF /* ChatGPTRegexRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534E22A1E4D1100ED95EF /* ChatGPTRegexRepository.swift */; };
 		E9D534F42A1E4D1100ED95EF /* BaseChatGPTRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534E32A1E4D1100ED95EF /* BaseChatGPTRepository.swift */; };
 		E9D534F52A1E4D1100ED95EF /* ChatGPTJSONConverterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534E42A1E4D1100ED95EF /* ChatGPTJSONConverterRepository.swift */; };
 		E9D534F62A1E4D1100ED95EF /* ChatGPTCodeSmellsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534E52A1E4D1100ED95EF /* ChatGPTCodeSmellsRepository.swift */; };
@@ -82,7 +81,6 @@
 		E9D534DE2A1E4D1100ED95EF /* ChatGPTError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTError.swift; sourceTree = "<group>"; };
 		E9D534DF2A1E4D1100ED95EF /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		E9D534E12A1E4D1100ED95EF /* ChatGPTUnitTestRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTUnitTestRepository.swift; sourceTree = "<group>"; };
-		E9D534E22A1E4D1100ED95EF /* ChatGPTRegexRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTRegexRepository.swift; sourceTree = "<group>"; };
 		E9D534E32A1E4D1100ED95EF /* BaseChatGPTRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseChatGPTRepository.swift; sourceTree = "<group>"; };
 		E9D534E42A1E4D1100ED95EF /* ChatGPTJSONConverterRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTJSONConverterRepository.swift; sourceTree = "<group>"; };
 		E9D534E52A1E4D1100ED95EF /* ChatGPTCodeSmellsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTCodeSmellsRepository.swift; sourceTree = "<group>"; };
@@ -243,9 +241,8 @@
 		E9D534E02A1E4D1100ED95EF /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				E9D534E12A1E4D1100ED95EF /* ChatGPTUnitTestRepository.swift */,
-				E9D534E22A1E4D1100ED95EF /* ChatGPTRegexRepository.swift */,
 				E9D534E32A1E4D1100ED95EF /* BaseChatGPTRepository.swift */,
+				E9D534E12A1E4D1100ED95EF /* ChatGPTUnitTestRepository.swift */,
 				E9D534E42A1E4D1100ED95EF /* ChatGPTJSONConverterRepository.swift */,
 				E9D534E52A1E4D1100ED95EF /* ChatGPTCodeSmellsRepository.swift */,
 				E9D534E62A1E4D1100ED95EF /* ChatGPTExplainCodeRepository.swift */,
@@ -435,7 +432,6 @@
 				E9D534EC2A1E4D1100ED95EF /* OpenAI+Localizable.swift in Sources */,
 				E9D534EE2A1E4D1100ED95EF /* ChatGPTRequest.swift in Sources */,
 				E9D5351A2A1E4D5500ED95EF /* CommentRepository.swift in Sources */,
-				E9D534F32A1E4D1100ED95EF /* ChatGPTRegexRepository.swift in Sources */,
 				E9D5351D2A1E4D5500ED95EF /* UnitTestRepository.swift in Sources */,
 				E9D534F82A1E4D1100ED95EF /* ChatGPTCommentRepository.swift in Sources */,
 				E9D5351F2A1E4D5500ED95EF /* Suggestion.swift in Sources */,
