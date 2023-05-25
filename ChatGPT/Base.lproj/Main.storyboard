@@ -838,9 +838,9 @@
                                 </popUpButtonCell>
                             </popUpButton>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djj-Ax-zdv" userLabel="Key">
-                                <rect key="frame" x="121" y="558" width="465" height="24"/>
+                                <rect key="frame" x="121" y="558" width="472" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="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" drawsBackground="YES" id="NAH-H1-wGK">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="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" drawsBackground="YES" id="NAH-H1-wGK">
                                     <font key="font" metaFont="system" size="16"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>

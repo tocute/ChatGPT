@@ -91,17 +91,18 @@ class ViewController: NSViewController {
         if let question = question {
             Task {
                 do {
-                    
+                    let myAnswerView: NSTextView = answerTextField.documentView! as! NSTextView
                     DispatchQueue.main.async {
                         self.loadingView.startAnimation(nil)
+                        myAnswerView.string = ""
                     }
                     
                     let suggestion = try await question.askChatGPTFor(apiKey, source: sourceCodeStr, language: languageStr)
                     
                     print("Result \(suggestion.result)")
-                    let myAnswerView: NSTextView = answerTextField.documentView! as! NSTextView
-                    myAnswerView.string = suggestion.result
+                    
                     DispatchQueue.main.async {
+                        myAnswerView.string = suggestion.result
                         self.loadingView.stopAnimation(nil)
                     }
                 } catch let error {
