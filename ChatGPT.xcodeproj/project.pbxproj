@@ -14,7 +14,6 @@
 		E9D534B52A1E450A00ED95EF /* ChatGPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534B42A1E450A00ED95EF /* ChatGPTTests.swift */; };
 		E9D534BF2A1E450A00ED95EF /* ChatGPTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534BE2A1E450A00ED95EF /* ChatGPTUITests.swift */; };
 		E9D534C12A1E450A00ED95EF /* ChatGPTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534C02A1E450A00ED95EF /* ChatGPTUITestsLaunchTests.swift */; };
-		E9D534E82A1E4D1100ED95EF /* openai.environment in Resources */ = {isa = PBXBuildFile; fileRef = E9D534CF2A1E4D1100ED95EF /* openai.environment */; };
 		E9D534E92A1E4D1100ED95EF /* OpenAI+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534D22A1E4D1100ED95EF /* OpenAI+Operations.swift */; };
 		E9D534EA2A1E4D1100ED95EF /* OpenAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534D32A1E4D1100ED95EF /* OpenAI.swift */; };
 		E9D534EB2A1E4D1100ED95EF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9D534D52A1E4D1100ED95EF /* Localizable.strings */; };
@@ -69,7 +68,6 @@
 		E9D534BA2A1E450A00ED95EF /* ChatGPTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatGPTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D534BE2A1E450A00ED95EF /* ChatGPTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTUITests.swift; sourceTree = "<group>"; };
 		E9D534C02A1E450A00ED95EF /* ChatGPTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E9D534CF2A1E4D1100ED95EF /* openai.environment */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = openai.environment; sourceTree = "<group>"; };
 		E9D534D22A1E4D1100ED95EF /* OpenAI+Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenAI+Operations.swift"; sourceTree = "<group>"; };
 		E9D534D32A1E4D1100ED95EF /* OpenAI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAI.swift; sourceTree = "<group>"; };
 		E9D534D62A1E4D1100ED95EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -175,19 +173,10 @@
 		E9D534CD2A1E4D1100ED95EF /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				E9D534CE2A1E4D1100ED95EF /* Settings */,
 				E9D534D02A1E4D1100ED95EF /* Network */,
 				E9D534E02A1E4D1100ED95EF /* Repositories */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		E9D534CE2A1E4D1100ED95EF /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				E9D534CF2A1E4D1100ED95EF /* openai.environment */,
-			);
-			path = Settings;
 			sourceTree = "<group>";
 		};
 		E9D534D02A1E4D1100ED95EF /* Network */ = {
@@ -388,7 +377,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9D534E82A1E4D1100ED95EF /* openai.environment in Resources */,
 				E9D534EB2A1E4D1100ED95EF /* Localizable.strings in Resources */,
 				E9D534A72A1E450A00ED95EF /* Assets.xcassets in Resources */,
 				E9D534AA2A1E450A00ED95EF /* Main.storyboard in Resources */,
