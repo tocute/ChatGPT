@@ -47,4 +47,8 @@ extension OpenAI {
 
         return try await processRequestFor(prompt: commentPrompt)
     }
+    
+    func  others(function code: String) async throws -> ChatGPTResponse {
+        return try await processRequestFor(prompt: code)
+    }
 }

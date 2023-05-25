@@ -28,8 +28,6 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let myCodeView: NSTextView = codeTextField.documentView! as! NSTextView
-        myCodeView.font?.withSize(16)
         // Do any additional setup after loading the view.
     }
 
@@ -79,8 +77,9 @@ class ViewController: NSViewController {
             break
             
         case .Others:
-            let alert = showWarningAlert("Error", text: "Developing....")
-            alert.runModal()
+//            let alert = showWarningAlert("Error", text: "Developing....")
+//            alert.runModal()
+            question = ChatGPTOthersRepository()
             break
             
         case .none:

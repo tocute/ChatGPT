@@ -826,7 +826,7 @@
                             </popUpButton>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="djj-Ax-zdv" userLabel="Key">
                                 <rect key="frame" x="121" y="571" width="513" height="24"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="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" drawsBackground="YES" id="NAH-H1-wGK">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Please Input your API KEY" drawsBackground="YES" id="NAH-H1-wGK">
                                     <font key="font" metaFont="system" size="16"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
