@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9D534A32A1E450800ED95EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534A22A1E450800ED95EF /* AppDelegate.swift */; };
+		E9D534A52A1E450800ED95EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534A42A1E450800ED95EF /* ViewController.swift */; };
+		E9D534A72A1E450A00ED95EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9D534A62A1E450A00ED95EF /* Assets.xcassets */; };
+		E9D534AA2A1E450A00ED95EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D534A82A1E450A00ED95EF /* Main.storyboard */; };
+		E9D534B52A1E450A00ED95EF /* ChatGPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534B42A1E450A00ED95EF /* ChatGPTTests.swift */; };
+		E9D534BF2A1E450A00ED95EF /* ChatGPTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534BE2A1E450A00ED95EF /* ChatGPTUITests.swift */; };
+		E9D534C12A1E450A00ED95EF /* ChatGPTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534C02A1E450A00ED95EF /* ChatGPTUITestsLaunchTests.swift */; };
+		E9D534E82A1E4D1100ED95EF /* openai.environment in Resources */ = {isa = PBXBuildFile; fileRef = E9D534CF2A1E4D1100ED95EF /* openai.environment */; };
+		E9D534E92A1E4D1100ED95EF /* OpenAI+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534D22A1E4D1100ED95EF /* OpenAI+Operations.swift */; };
+		E9D534EA2A1E4D1100ED95EF /* OpenAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534D32A1E4D1100ED95EF /* OpenAI.swift */; };
+		E9D534EB2A1E4D1100ED95EF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9D534D52A1E4D1100ED95EF /* Localizable.strings */; };
+		E9D534EC2A1E4D1100ED95EF /* OpenAI+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534D92A1E4D1100ED95EF /* OpenAI+Localizable.swift */; };
+		E9D534ED2A1E4D1100ED95EF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534DB2A1E4D1100ED95EF /* Constants.swift */; };
+		E9D534EE2A1E4D1100ED95EF /* ChatGPTRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534DC2A1E4D1100ED95EF /* ChatGPTRequest.swift */; };
+		E9D534EF2A1E4D1100ED95EF /* ChatGPTResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534DD2A1E4D1100ED95EF /* ChatGPTResponse.swift */; };
+		E9D534F02A1E4D1100ED95EF /* ChatGPTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534DE2A1E4D1100ED95EF /* ChatGPTError.swift */; };
+		E9D534F12A1E4D1100ED95EF /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534DF2A1E4D1100ED95EF /* NetworkRequest.swift */; };
+		E9D534F22A1E4D1100ED95EF /* ChatGPTUnitTestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534E12A1E4D1100ED95EF /* ChatGPTUnitTestRepository.swift */; };
+		E9D534F32A1E4D1100ED95EF /* ChatGPTRegexRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534E22A1E4D1100ED95EF /* ChatGPTRegexRepository.swift */; };
+		E9D534F42A1E4D1100ED95EF /* BaseChatGPTRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534E32A1E4D1100ED95EF /* BaseChatGPTRepository.swift */; };
+		E9D534F52A1E4D1100ED95EF /* ChatGPTJSONConverterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534E42A1E4D1100ED95EF /* ChatGPTJSONConverterRepository.swift */; };
+		E9D534F62A1E4D1100ED95EF /* ChatGPTCodeSmellsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534E52A1E4D1100ED95EF /* ChatGPTCodeSmellsRepository.swift */; };
+		E9D534F72A1E4D1100ED95EF /* ChatGPTExplainCodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534E62A1E4D1100ED95EF /* ChatGPTExplainCodeRepository.swift */; };
+		E9D534F82A1E4D1100ED95EF /* ChatGPTCommentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534E72A1E4D1100ED95EF /* ChatGPTCommentRepository.swift */; };
+		E9D535182A1E4D5500ED95EF /* ExplainCodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534FB2A1E4D5500ED95EF /* ExplainCodeRepository.swift */; };
+		E9D535192A1E4D5500ED95EF /* RegexRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534FC2A1E4D5500ED95EF /* RegexRepository.swift */; };
+		E9D5351A2A1E4D5500ED95EF /* CommentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534FD2A1E4D5500ED95EF /* CommentRepository.swift */; };
+		E9D5351B2A1E4D5500ED95EF /* CodeSmellsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534FE2A1E4D5500ED95EF /* CodeSmellsRepository.swift */; };
+		E9D5351C2A1E4D5500ED95EF /* JSONConverterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D534FF2A1E4D5500ED95EF /* JSONConverterRepository.swift */; };
+		E9D5351D2A1E4D5500ED95EF /* UnitTestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D535002A1E4D5500ED95EF /* UnitTestRepository.swift */; };
+		E9D5351E2A1E4D5500ED95EF /* ConverterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D535022A1E4D5500ED95EF /* ConverterError.swift */; };
+		E9D5351F2A1E4D5500ED95EF /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D535032A1E4D5500ED95EF /* Suggestion.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9D534B12A1E450A00ED95EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D534972A1E450800ED95EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9D5349E2A1E450800ED95EF;
+			remoteInfo = ChatGPT;
+		};
+		E9D534BB2A1E450A00ED95EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D534972A1E450800ED95EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9D5349E2A1E450800ED95EF;
+			remoteInfo = ChatGPT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E9D5349F2A1E450800ED95EF /* ChatGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D534A22A1E450800ED95EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E9D534A42A1E450800ED95EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9D534A62A1E450A00ED95EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9D534A92A1E450A00ED95EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9D534AB2A1E450A00ED95EF /* ChatGPT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChatGPT.entitlements; sourceTree = "<group>"; };
+		E9D534B02A1E450A00ED95EF /* ChatGPTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatGPTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D534B42A1E450A00ED95EF /* ChatGPTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTTests.swift; sourceTree = "<group>"; };
+		E9D534BA2A1E450A00ED95EF /* ChatGPTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatGPTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D534BE2A1E450A00ED95EF /* ChatGPTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTUITests.swift; sourceTree = "<group>"; };
+		E9D534C02A1E450A00ED95EF /* ChatGPTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E9D534CF2A1E4D1100ED95EF /* openai.environment */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = openai.environment; sourceTree = "<group>"; };
+		E9D534D22A1E4D1100ED95EF /* OpenAI+Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenAI+Operations.swift"; sourceTree = "<group>"; };
+		E9D534D32A1E4D1100ED95EF /* OpenAI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAI.swift; sourceTree = "<group>"; };
+		E9D534D62A1E4D1100ED95EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E9D534D72A1E4D1100ED95EF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E9D534D92A1E4D1100ED95EF /* OpenAI+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OpenAI+Localizable.swift"; sourceTree = "<group>"; };
+		E9D534DB2A1E4D1100ED95EF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E9D534DC2A1E4D1100ED95EF /* ChatGPTRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTRequest.swift; sourceTree = "<group>"; };
+		E9D534DD2A1E4D1100ED95EF /* ChatGPTResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTResponse.swift; sourceTree = "<group>"; };
+		E9D534DE2A1E4D1100ED95EF /* ChatGPTError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTError.swift; sourceTree = "<group>"; };
+		E9D534DF2A1E4D1100ED95EF /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		E9D534E12A1E4D1100ED95EF /* ChatGPTUnitTestRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTUnitTestRepository.swift; sourceTree = "<group>"; };
+		E9D534E22A1E4D1100ED95EF /* ChatGPTRegexRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTRegexRepository.swift; sourceTree = "<group>"; };
+		E9D534E32A1E4D1100ED95EF /* BaseChatGPTRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseChatGPTRepository.swift; sourceTree = "<group>"; };
+		E9D534E42A1E4D1100ED95EF /* ChatGPTJSONConverterRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTJSONConverterRepository.swift; sourceTree = "<group>"; };
+		E9D534E52A1E4D1100ED95EF /* ChatGPTCodeSmellsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTCodeSmellsRepository.swift; sourceTree = "<group>"; };
+		E9D534E62A1E4D1100ED95EF /* ChatGPTExplainCodeRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTExplainCodeRepository.swift; sourceTree = "<group>"; };
+		E9D534E72A1E4D1100ED95EF /* ChatGPTCommentRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTCommentRepository.swift; sourceTree = "<group>"; };
+		E9D534FB2A1E4D5500ED95EF /* ExplainCodeRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplainCodeRepository.swift; sourceTree = "<group>"; };
+		E9D534FC2A1E4D5500ED95EF /* RegexRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexRepository.swift; sourceTree = "<group>"; };
+		E9D534FD2A1E4D5500ED95EF /* CommentRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentRepository.swift; sourceTree = "<group>"; };
+		E9D534FE2A1E4D5500ED95EF /* CodeSmellsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeSmellsRepository.swift; sourceTree = "<group>"; };
+		E9D534FF2A1E4D5500ED95EF /* JSONConverterRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONConverterRepository.swift; sourceTree = "<group>"; };
+		E9D535002A1E4D5500ED95EF /* UnitTestRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestRepository.swift; sourceTree = "<group>"; };
+		E9D535022A1E4D5500ED95EF /* ConverterError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterError.swift; sourceTree = "<group>"; };
+		E9D535032A1E4D5500ED95EF /* Suggestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9D5349C2A1E450800ED95EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D534AD2A1E450A00ED95EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D534B72A1E450A00ED95EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9D534962A1E450800ED95EF = {
+			isa = PBXGroup;
+			children = (
+				E9D534A12A1E450800ED95EF /* ChatGPT */,
+				E9D534B32A1E450A00ED95EF /* ChatGPTTests */,
+				E9D534BD2A1E450A00ED95EF /* ChatGPTUITests */,
+				E9D534A02A1E450800ED95EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9D534A02A1E450800ED95EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9D5349F2A1E450800ED95EF /* ChatGPT.app */,
+				E9D534B02A1E450A00ED95EF /* ChatGPTTests.xctest */,
+				E9D534BA2A1E450A00ED95EF /* ChatGPTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9D534A12A1E450800ED95EF /* ChatGPT */ = {
+			isa = PBXGroup;
+			children = (
+				E9D534CD2A1E4D1100ED95EF /* Data */,
+				E9D534F92A1E4D5500ED95EF /* Domain */,
+				E9D534A22A1E450800ED95EF /* AppDelegate.swift */,
+				E9D534A42A1E450800ED95EF /* ViewController.swift */,
+				E9D534A62A1E450A00ED95EF /* Assets.xcassets */,
+				E9D534A82A1E450A00ED95EF /* Main.storyboard */,
+				E9D534AB2A1E450A00ED95EF /* ChatGPT.entitlements */,
+			);
+			path = ChatGPT;
+			sourceTree = "<group>";
+		};
+		E9D534B32A1E450A00ED95EF /* ChatGPTTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9D534B42A1E450A00ED95EF /* ChatGPTTests.swift */,
+			);
+			path = ChatGPTTests;
+			sourceTree = "<group>";
+		};
+		E9D534BD2A1E450A00ED95EF /* ChatGPTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9D534BE2A1E450A00ED95EF /* ChatGPTUITests.swift */,
+				E9D534C02A1E450A00ED95EF /* ChatGPTUITestsLaunchTests.swift */,
+			);
+			path = ChatGPTUITests;
+			sourceTree = "<group>";
+		};
+		E9D534CD2A1E4D1100ED95EF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E9D534CE2A1E4D1100ED95EF /* Settings */,
+				E9D534D02A1E4D1100ED95EF /* Network */,
+				E9D534E02A1E4D1100ED95EF /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E9D534CE2A1E4D1100ED95EF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E9D534CF2A1E4D1100ED95EF /* openai.environment */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E9D534D02A1E4D1100ED95EF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E9D534D12A1E4D1100ED95EF /* OpenAI */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E9D534D12A1E4D1100ED95EF /* OpenAI */ = {
+			isa = PBXGroup;
+			children = (
+				E9D534D22A1E4D1100ED95EF /* OpenAI+Operations.swift */,
+				E9D534D32A1E4D1100ED95EF /* OpenAI.swift */,
+				E9D534D42A1E4D1100ED95EF /* Resources */,
+				E9D534D82A1E4D1100ED95EF /* Extensions */,
+				E9D534DA2A1E4D1100ED95EF /* Model */,
+			);
+			path = OpenAI;
+			sourceTree = "<group>";
+		};
+		E9D534D42A1E4D1100ED95EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E9D534D52A1E4D1100ED95EF /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E9D534D82A1E4D1100ED95EF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E9D534D92A1E4D1100ED95EF /* OpenAI+Localizable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E9D534DA2A1E4D1100ED95EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9D534DB2A1E4D1100ED95EF /* Constants.swift */,
+				E9D534DC2A1E4D1100ED95EF /* ChatGPTRequest.swift */,
+				E9D534DD2A1E4D1100ED95EF /* ChatGPTResponse.swift */,
+				E9D534DE2A1E4D1100ED95EF /* ChatGPTError.swift */,
+				E9D534DF2A1E4D1100ED95EF /* NetworkRequest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9D534E02A1E4D1100ED95EF /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E9D534E12A1E4D1100ED95EF /* ChatGPTUnitTestRepository.swift */,
+				E9D534E22A1E4D1100ED95EF /* ChatGPTRegexRepository.swift */,
+				E9D534E32A1E4D1100ED95EF /* BaseChatGPTRepository.swift */,
+				E9D534E42A1E4D1100ED95EF /* ChatGPTJSONConverterRepository.swift */,
+				E9D534E52A1E4D1100ED95EF /* ChatGPTCodeSmellsRepository.swift */,
+				E9D534E62A1E4D1100ED95EF /* ChatGPTExplainCodeRepository.swift */,
+				E9D534E72A1E4D1100ED95EF /* ChatGPTCommentRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E9D534F92A1E4D5500ED95EF /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E9D534FA2A1E4D5500ED95EF /* Repositories */,
+				E9D535012A1E4D5500ED95EF /* Model */,
+			);
+			name = Domain;
+			path = ChatGPT/Domain;
+			sourceTree = SOURCE_ROOT;
+		};
+		E9D534FA2A1E4D5500ED95EF /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E9D534FB2A1E4D5500ED95EF /* ExplainCodeRepository.swift */,
+				E9D534FC2A1E4D5500ED95EF /* RegexRepository.swift */,
+				E9D534FD2A1E4D5500ED95EF /* CommentRepository.swift */,
+				E9D534FE2A1E4D5500ED95EF /* CodeSmellsRepository.swift */,
+				E9D534FF2A1E4D5500ED95EF /* JSONConverterRepository.swift */,
+				E9D535002A1E4D5500ED95EF /* UnitTestRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E9D535012A1E4D5500ED95EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9D535022A1E4D5500ED95EF /* ConverterError.swift */,
+				E9D535032A1E4D5500ED95EF /* Suggestion.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9D5349E2A1E450800ED95EF /* ChatGPT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9D534C42A1E450A00ED95EF /* Build configuration list for PBXNativeTarget "ChatGPT" */;
+			buildPhases = (
+				E9D5349B2A1E450800ED95EF /* Sources */,
+				E9D5349C2A1E450800ED95EF /* Frameworks */,
+				E9D5349D2A1E450800ED95EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatGPT;
+			productName = ChatGPT;
+			productReference = E9D5349F2A1E450800ED95EF /* ChatGPT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9D534AF2A1E450A00ED95EF /* ChatGPTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9D534C72A1E450A00ED95EF /* Build configuration list for PBXNativeTarget "ChatGPTTests" */;
+			buildPhases = (
+				E9D534AC2A1E450A00ED95EF /* Sources */,
+				E9D534AD2A1E450A00ED95EF /* Frameworks */,
+				E9D534AE2A1E450A00ED95EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9D534B22A1E450A00ED95EF /* PBXTargetDependency */,
+			);
+			name = ChatGPTTests;
+			productName = ChatGPTTests;
+			productReference = E9D534B02A1E450A00ED95EF /* ChatGPTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E9D534B92A1E450A00ED95EF /* ChatGPTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9D534CA2A1E450A00ED95EF /* Build configuration list for PBXNativeTarget "ChatGPTUITests" */;
+			buildPhases = (
+				E9D534B62A1E450A00ED95EF /* Sources */,
+				E9D534B72A1E450A00ED95EF /* Frameworks */,
+				E9D534B82A1E450A00ED95EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9D534BC2A1E450A00ED95EF /* PBXTargetDependency */,
+			);
+			name = ChatGPTUITests;
+			productName = ChatGPTUITests;
+			productReference = E9D534BA2A1E450A00ED95EF /* ChatGPTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9D534972A1E450800ED95EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					E9D5349E2A1E450800ED95EF = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					E9D534AF2A1E450A00ED95EF = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = E9D5349E2A1E450800ED95EF;
+					};
+					E9D534B92A1E450A00ED95EF = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = E9D5349E2A1E450800ED95EF;
+					};
+				};
+			};
+			buildConfigurationList = E9D5349A2A1E450800ED95EF /* Build configuration list for PBXProject "ChatGPT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+			);
+			mainGroup = E9D534962A1E450800ED95EF;
+			productRefGroup = E9D534A02A1E450800ED95EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9D5349E2A1E450800ED95EF /* ChatGPT */,
+				E9D534AF2A1E450A00ED95EF /* ChatGPTTests */,
+				E9D534B92A1E450A00ED95EF /* ChatGPTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9D5349D2A1E450800ED95EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D534E82A1E4D1100ED95EF /* openai.environment in Resources */,
+				E9D534EB2A1E4D1100ED95EF /* Localizable.strings in Resources */,
+				E9D534A72A1E450A00ED95EF /* Assets.xcassets in Resources */,
+				E9D534AA2A1E450A00ED95EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D534AE2A1E450A00ED95EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D534B82A1E450A00ED95EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9D5349B2A1E450800ED95EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D534F62A1E4D1100ED95EF /* ChatGPTCodeSmellsRepository.swift in Sources */,
+				E9D5351E2A1E4D5500ED95EF /* ConverterError.swift in Sources */,
+				E9D534F42A1E4D1100ED95EF /* BaseChatGPTRepository.swift in Sources */,
+				E9D534E92A1E4D1100ED95EF /* OpenAI+Operations.swift in Sources */,
+				E9D535192A1E4D5500ED95EF /* RegexRepository.swift in Sources */,
+				E9D534A52A1E450800ED95EF /* ViewController.swift in Sources */,
+				E9D534F72A1E4D1100ED95EF /* ChatGPTExplainCodeRepository.swift in Sources */,
+				E9D534F02A1E4D1100ED95EF /* ChatGPTError.swift in Sources */,
+				E9D534EF2A1E4D1100ED95EF /* ChatGPTResponse.swift in Sources */,
+				E9D5351C2A1E4D5500ED95EF /* JSONConverterRepository.swift in Sources */,
+				E9D534F12A1E4D1100ED95EF /* NetworkRequest.swift in Sources */,
+				E9D534A32A1E450800ED95EF /* AppDelegate.swift in Sources */,
+				E9D534EA2A1E4D1100ED95EF /* OpenAI.swift in Sources */,
+				E9D534EC2A1E4D1100ED95EF /* OpenAI+Localizable.swift in Sources */,
+				E9D534EE2A1E4D1100ED95EF /* ChatGPTRequest.swift in Sources */,
+				E9D5351A2A1E4D5500ED95EF /* CommentRepository.swift in Sources */,
+				E9D534F32A1E4D1100ED95EF /* ChatGPTRegexRepository.swift in Sources */,
+				E9D5351D2A1E4D5500ED95EF /* UnitTestRepository.swift in Sources */,
+				E9D534F82A1E4D1100ED95EF /* ChatGPTCommentRepository.swift in Sources */,
+				E9D5351F2A1E4D5500ED95EF /* Suggestion.swift in Sources */,
+				E9D5351B2A1E4D5500ED95EF /* CodeSmellsRepository.swift in Sources */,
+				E9D534F22A1E4D1100ED95EF /* ChatGPTUnitTestRepository.swift in Sources */,
+				E9D534F52A1E4D1100ED95EF /* ChatGPTJSONConverterRepository.swift in Sources */,
+				E9D535182A1E4D5500ED95EF /* ExplainCodeRepository.swift in Sources */,
+				E9D534ED2A1E4D1100ED95EF /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D534AC2A1E450A00ED95EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D534B52A1E450A00ED95EF /* ChatGPTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D534B62A1E450A00ED95EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D534C12A1E450A00ED95EF /* ChatGPTUITestsLaunchTests.swift in Sources */,
+				E9D534BF2A1E450A00ED95EF /* ChatGPTUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9D534B22A1E450A00ED95EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9D5349E2A1E450800ED95EF /* ChatGPT */;
+			targetProxy = E9D534B12A1E450A00ED95EF /* PBXContainerItemProxy */;
+		};
+		E9D534BC2A1E450A00ED95EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9D5349E2A1E450800ED95EF /* ChatGPT */;
+			targetProxy = E9D534BB2A1E450A00ED95EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9D534A82A1E450A00ED95EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9D534A92A1E450A00ED95EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9D534D52A1E4D1100ED95EF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9D534D62A1E4D1100ED95EF /* en */,
+				E9D534D72A1E4D1100ED95EF /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9D534C22A1E450A00ED95EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E9D534C32A1E450A00ED95EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E9D534C52A1E450A00ED95EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChatGPT/ChatGPT.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WP37K75KJZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkstream.video.ChatGPT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E9D534C62A1E450A00ED95EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChatGPT/ChatGPT.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WP37K75KJZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkstream.video.ChatGPT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E9D534C82A1E450A00ED95EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WP37K75KJZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkstream.video.ChatGPTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatGPT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChatGPT";
+			};
+			name = Debug;
+		};
+		E9D534C92A1E450A00ED95EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WP37K75KJZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkstream.video.ChatGPTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatGPT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChatGPT";
+			};
+			name = Release;
+		};
+		E9D534CB2A1E450A00ED95EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WP37K75KJZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkstream.video.ChatGPTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ChatGPT;
+			};
+			name = Debug;
+		};
+		E9D534CC2A1E450A00ED95EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WP37K75KJZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kkstream.video.ChatGPTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ChatGPT;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9D5349A2A1E450800ED95EF /* Build configuration list for PBXProject "ChatGPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9D534C22A1E450A00ED95EF /* Debug */,
+				E9D534C32A1E450A00ED95EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9D534C42A1E450A00ED95EF /* Build configuration list for PBXNativeTarget "ChatGPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9D534C52A1E450A00ED95EF /* Debug */,
+				E9D534C62A1E450A00ED95EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9D534C72A1E450A00ED95EF /* Build configuration list for PBXNativeTarget "ChatGPTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9D534C82A1E450A00ED95EF /* Debug */,
+				E9D534C92A1E450A00ED95EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9D534CA2A1E450A00ED95EF /* Build configuration list for PBXNativeTarget "ChatGPTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9D534CB2A1E450A00ED95EF /* Debug */,
+				E9D534CC2A1E450A00ED95EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9D534972A1E450800ED95EF /* Project object */;
+}
