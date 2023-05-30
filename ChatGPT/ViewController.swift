@@ -25,10 +25,14 @@ class ViewController: NSViewController {
     @IBOutlet weak var languageOption: NSPopUpButton!
     @IBOutlet weak var questionOption: NSPopUpButton!
     @IBOutlet weak var APIKeyTextField: NSTextField!
-    
+    let APIKey = "APIKEY"
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let api = UserDefaults.standard.string(forKey: APIKey)
+        if let api {
+            APIKeyTextField.stringValue = api
+        }
     }
 
     override var representedObject: Any? {
@@ -37,6 +41,12 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBAction func onFreeButtonPressed(_ sender: Any) {
+        if let openAIURL = URL(string: "https://platform.openai.com/account/api-keys") {
+            NSWorkspace.shared.open(openAIURL)
+        }
+    }
+    
     @IBAction func onAskButtonPressed(_ sender: Any) {
         let myCodeView: NSTextView = codeTextField.documentView! as! NSTextView
         if APIKeyTextField.stringValue.isEmpty {
@@ -54,7 +64,7 @@ class ViewController: NSViewController {
         let sourceCodeStr = myCodeView.string
         let questionType = questionOption.title
         var question: BaseChatGPTRepository?
-        
+        UserDefaults.standard.set(apiKey, forKey: APIKey)
         switch QuestionType(rawValue: questionType) {
         case .ConvertJSONStruct:
             question = ChatGPTJSONConverterRepository()
